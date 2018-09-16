@@ -1,0 +1,18 @@
+<div class="box d-flex justify-content-center align-items-center">
+    <div class="stopwatch">
+        <h1>STOPWATCH</h1>
+
+        <p class="timer">
+            <span class="light blink" [ngStyle]="getStyle()">&nbsp;</span>
+            <span class="minutes">{{timer.getDspMinutes}}</span> :
+            <span class="seconds">{{timer.getDspSeconds}}</span> :
+            <span class="milliseconds">{{timer.getDspMilliseconds}}</span>
+        </p>
+
+        <!-- <p>REAL : {{sec}}</p> -->
+
+        <button type="submit" class="btn btn-outline-dark stopwatch" (click)="toggle()">{{startStop}}</button>
+        <button type="submit" class="btn btn-outline-dark stopwatch" [disabled]="this.startStop === 'Stop' || (this.startStop === 'Start' && this.resetStatus)" (click)="reset()">Reset</button>
+
+    </div>
+</div>

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Londrina+Outline');
+
+/* @font-face {
+    font-family: outline;
+    src: url("/assets/helvet.ttf") format("truetype");
+  } */
+
+span.minutes {
+    color:chocolate;
+}
+span.seconds {
+    color: green;
+}
+span.milliseconds {
+    color: goldenrod;
+}
+
+.light::before {
+    content: ' \25CF';
+    font-size: 50px;
+}
+
+.box {
+    margin: auto;
+    position: absolute;
+    top: 10%; left: 0; bottom: 30%; right: 0;
+}
+
+.stopwatch {
+    font-family : 'Londrina Outline';
+    color:black;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+}
+
+.btn:focus,.btn:active {
+    box-shadow: none;
+    
+}
+
+.btn {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family : 'Londrina Outline';
+    color:black;
+    font-weight: bolder;
+    font-size: 80px;
+}
+
