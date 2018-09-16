@@ -1,0 +1,90 @@
+hr {
+    height:5px;
+    border:none;
+    color:#333;
+    background-color:#333;
+}
+
+h2 {
+    color: #66CCFF;
+}
+
+h1 {
+    border: dashed red;
+    background-color: orange;
+    border-radius: 15px/45px;
+    color: white;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50; 
+    position: absolute;
+    top: 70px;
+    
+}
+
+p {
+    border: dashed black 1px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.lead {
+    text-decoration: underline overline #FF3028;
+}
+
+.author {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+img {
+    cursor: grab;
+}
+
+ol {
+    padding: 20px; 
+    list-style-type: none;
+
+}
+ol li {
+    float: left;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+#content {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+#container {
+    width: 100%;
+    
+}
+#overview {
+    width: 100%;
+    
+}
+
+#info {
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 200px;
+    float: left;
+    vertical-align: top;
+    width: 75%;
+}
+
+#avatar {
+    float: right;
+    vertical-align: middle;
+    text-align: center;
+    width: 25%;
+    
+}
+
+#interests {
+    clear: left;
+}

@@ -1,0 +1,15 @@
+.container {
+    margin: auto;
+    position: absolute;
+    top: 5%; left: 0; bottom: 0; right: 0;
+}
+
+.box {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: whitesmoke;
+    font-size: 30px;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: orange;
+    display: inline-block;
+}
