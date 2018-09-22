@@ -1,0 +1,52 @@
+.glyphbtn {
+    margin-left: 10px;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: inline-block;
+      
+}
+
+.fa {
+    cursor: pointer;  
+}
+
+.glyphbtn:hover{
+    background-color: whitesmoke;
+    
+}
+
+
+
+.ipt {
+    width: 90%;
+    float: left;
+}
+button {
+    float: right;
+}
+
+.fr {
+    float:right;
+}
+
+.box {
+    margin: auto;
+    position: absolute;
+    top: 20%; left: 0; bottom: 10%; right: 0;
+    width: 50%;
+}
+
+h2 {
+    color: #66CCFF;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+td {
+    vertical-align: middle;
+}

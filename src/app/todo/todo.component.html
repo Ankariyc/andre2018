@@ -1,0 +1,31 @@
+<div class="box" >
+  <h2 style="text-align: center;">Todo list</h2>
+
+  <form name="todoForm">
+    
+      <div class="alert alert-danger" *ngIf="error">Todo text is required.
+          <i class="fr fa-lg fa fa-window-close" aria-hidden="true" (click)="hideError();"></i>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+      <input type="text" name="addTodoText" class="form-control" required #addTodoText />
+      <span class="glyphbtn fa fa-plus" (click)="add(addTodoText.value); addTodoText.value=''"></span>
+    </div>
+  </form>
+
+  <table class="table table-hover" >
+    <tr *ngFor="let todo of todos; let i = index">
+      <td><input type="checkbox" [checked]="todo.doneStatus"></td>
+      <td style="width:90%" (click)="setEditMode(i);" >
+        <div *ngIf="!editModeStatus || i != currIndex">{{ todo.text }}</div>
+        <div *ngIf="editModeStatus && i == currIndex">
+
+          <div class="ipt"><input type="text" class="form-control" [attr.value]="todo.text" #editTodoText />
+          </div>
+          <button type="button" class="btn btn-light" (click)="save(todo, editTodoText.value)">Save</button>
+        </div>
+      </td>
+      <td><i class="fa fa-trash" aria-hidden="true" (click)="delete(todo)"></i></td>
+    </tr>
+  </table>
+
+</div>
