@@ -1,0 +1,8 @@
+POST https://isha-todos-api.herokuapp.com/todos/add-todo HTTP/1.1
+content-type: application/json
+
+{"title":"hello world setDate","completed":true,"username":"Jackson Son", "createdAt":"2019-09-22T09:45:12.093Z"}
+
+https://isha-todos-api.herokuapp.com/todos/list
+
+https://isha-todos-api.herokuapp.com/todos
