@@ -12,6 +12,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { StopwatchComponent } from './stopwatch/stopwatch.component';
 import { TodoComponent } from './todo/todo.component';
 import { ClickOutsideModule } from 'ng-click-outside';
+import { TodoApiComponent } from './todo-api/todo-api.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ClickOutsideModule } from 'ng-click-outside';
     AboutComponent,
     StopwatchComponent,
     TodoComponent,
+    TodoApiComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,9 +32,9 @@ import { ClickOutsideModule } from 'ng-click-outside';
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
-    HttpClientInMemoryWebApiModule.forRoot(
-      InMemoryDataService, { dataEncapsulation: false }
-    )
+    // HttpClientInMemoryWebApiModule.forRoot(
+    //   InMemoryDataService, { dataEncapsulation: false }
+    // )
   ],
   providers: [],
   bootstrap: [AppComponent]
